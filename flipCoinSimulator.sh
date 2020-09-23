@@ -41,6 +41,5 @@ done
                 echo "Tie up"
 		for i in 1 2
 		FLIP=$(((RANDOM%10)%2))
-
-        fi
+  fi
 
