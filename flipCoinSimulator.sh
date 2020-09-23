@@ -31,10 +31,16 @@ do
 		fi
 		
 	fi
-	if [[ $HeadWinCounts -eq $TailWinCounts ]]
-	then
-		echo "Tie up"
-	fi
+
 
 done
+
+  if [[ $HeadWinCounts -eq $TailWinCounts ]]
+        then
+
+                echo "Tie up"
+		for i in 1 2
+		FLIP=$(((RANDOM%10)%2))
+
+        fi
 
