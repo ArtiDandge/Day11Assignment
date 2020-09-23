@@ -2,11 +2,22 @@
 
 echo "This problem displays the winner Heads or Tails"
 
-FLIP=$((RANDOM%2))
+read -p "how many times you want to flip coin ?" winCount
 
+FLIP=$((RANDOM%2))
+HeadWinCount=0
+TailWinCount=0
+for i in `seq $winCount` 
+do
+FLIP=$((RANDOM%2))
 if [[ $FLIP -eq 1 ]]
 then
-	echo "Head wins"
+	((HeadWinCount++))
 else
-	echo "Tail wins"
+	((TailWinCount++))
 fi
+
+done
+
+echo "Head won $HeadWinCount times"
+echo "Tail won $TailWinCount times"
