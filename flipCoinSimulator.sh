@@ -2,9 +2,11 @@
 
 echo "This problem displays the winner Heads or Tails"
 
+#Variables
 HeadWinCounts=0
 TailWinCounts=0
 
+#loop to find winner of toss
 while true
 do
 
